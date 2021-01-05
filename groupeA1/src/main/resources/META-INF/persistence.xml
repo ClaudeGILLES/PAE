@@ -4,8 +4,26 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	
+	
+	<persistence-unit name="groupeA1AJTA" transaction-type="JTA">
+	
+		
+		<jta-data-source>jdbc/groupeA1</jta-data-source>
+		
+		
+		  
+		
+				
+				
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+	
+		<properties>
+		   
+		</properties>
+	</persistence-unit>
+	
 	<persistence-unit name="groupeA1" transaction-type="RESOURCE_LOCAL">
-    <!-- Bowser : localhost:4848 -->
+  
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
